@@ -1,4 +1,4 @@
-import { pyjamaBox } from "./blanks.mjs";
+import { pyjamaMention } from "./blanks.mjs";
 
 const xpresHow = {
   label: "Xpres, how to DTF",
@@ -66,9 +66,9 @@ export const fabricPages = [
 <p>Hot peel is a different film. A typical ready-made hot-peel start on cotton is still around 155–160°C, for 8–12 seconds, peeled straight away. <a href="https://www.amayauk.com/product/propeel-dtf-film-60cm-x-100m/" rel="noopener noreferrer">Amaya ProPeel</a> is much shorter: 160°C for 3 seconds, medium-heavy, peel instantly, then 5 seconds again. Use 3 seconds only when that is your film. The <a href="/?fabric=cotton&amp;transfer=hot-peel">lookup</a> keeps the two cards apart.</p>
 <p>Pre-press cotton. It holds moisture, and a damp patch is a common reason a transfer lifts after a wash that looked fine in the press. See <a href="/guides/pre-pressing/">pre-pressing</a>. Glitter uses the cold-peel row unless the packet says otherwise, with a lighter second press so the sparkle is not crushed.</p>
 <p>A one-colour name is often simpler in heat transfer vinyl. Those temperatures are on <a href="https://heatpress-settings.co.uk/methods/standard-htv/">Heat press settings</a>, not here. Sublimation will not print ordinary cotton, however white the shirt is. The comparison is on the <a href="/guides/dtf-vs-htv-vs-sublimation/">DTF, HTV and sublimation</a> page.</p>
-<p>The blank kids’ sets below are 100% cotton, about 200 gsm, with a white chest. Press that chest, not the raglan seam. Placement and a suggested design width are on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page.</p>
-`,
-    closing: pyjamaBox(`<p>White chests on cotton. A DTF transfer sits on that chest. The sleeves and bottoms can be coloured, striped or printed.</p>`)
+<p>A kids’ top in this cotton is about 200 gsm, with a white chest. Press that chest, not the raglan seam. Placement and a suggested design width are on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page.</p>
+${pyjamaMention()}
+`
   },
   {
     path: "/fabrics/polyester/",
@@ -264,12 +264,12 @@ export const fabricPages = [
       { q: "Can I sublimate the white chest?", a: "No. The chest is cotton. Sublimation dye does not bond to it. A longer press adds heat, not polyester. DTF and heat transfer vinyl can sit on that chest. Heat press settings sets out why." }
     ],
     body: `
-<p>The kids’ sets are 100% cotton, about 200 gsm, with a long raglan sleeve. The top body is white. The sleeves and bottoms are coloured, striped or printed. There is no brand label in the neck. Baby sets further down are a different cut, still cotton.</p>
+<p>The kids’ sets these notes are written around are 100% cotton, about 200 gsm, with a long raglan sleeve. The top body is white. The sleeves and bottoms are coloured, striped or printed. There is no brand label in the neck.</p>
+${pyjamaMention()}
 <p>Use the <a href="/fabrics/cotton/">cotton</a> press: for a cold-peel transfer, 150–160°C for 10–15 seconds, medium, peel cold, then a second press under a cover. Pre-press the white chest first so it is dry and flat. Keep poppers, zips and the raglan seams off the platen. A design that crosses the seam sits on a ridge, and the edge will lift.</p>
 <p>Lay the top flat, front up. Centre the transfer on the white body, below the neckband, with plain cotton around it. Cover it. If the platen also covers a printed sleeve, that print takes the same heat, so slide the top until the platen meets the chest and as little of the print as you can manage.</p>
 ${designTable}
 <p>A one-colour name can be vinyl instead of DTF. Placement and the film charts are on <a href="https://heatpress-settings.co.uk/pyjamas/htv/">Heat press settings</a>. If you sell children’s nightwear in the UK, a design on the chest does not remove the labelling rules. That sister page points at the trading-standards summary. This site is not legal advice.</p>
-`,
-    closing: pyjamaBox(`<p>Every set linked here, including the baby sets. The white chest on the raglan tops is the DTF area. Pick the size on the listing.</p>`)
+`
   }
 ];
