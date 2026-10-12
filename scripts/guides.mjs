@@ -1,4 +1,4 @@
-import { pyjamaBox } from "./blanks.mjs";
+import { pyjamaLink } from "./blanks.mjs";
 
 const xpresHow = {
   label: "Xpres, how to DTF",
@@ -178,9 +178,8 @@ export const guidePages = [
 <p><a href="https://www.xpres.co.uk/xpres-dtf-evolution-cold-peel-sheets-pack-x-100" rel="noopener noreferrer">Xpres Evolution cold-peel sheets</a> say wash up to 40°C, inside out, and iron on the reverse only. That is one product. If your transfers name a cooler wash, or the garment label does, use the cooler of the two. A hi-vis vest with a 30°C label does not become a 40°C wash because a film allowed 40.</p>
 <p>Inside out keeps the print off the drum and off zips on other clothes. Skip bleach unless the sheet allows it. Fabric conditioner is not mentioned on the Evolution page. If your sheet says to skip it, skip it. Conditioner can sit on the print and weaken the bond over a few washes.</p>
 <p>Iron from the back, with no steam on the print, and only if the label allows ironing at all. Do not slide a hot iron across the face of the design. Stretching a warm print, or peeling a corner to “check” it, starts the crack you will see after the first wash. If the design comes off in the wash, use <a href="/troubleshooting/peeling-after-washing/">peeling after washing</a> rather than pressing the same shirt hotter and washing it again the same day.</p>
-<p>The cotton sets below are ordinary cotton nightwear once they are pressed. Wash them on the care label, inside out, and within whatever limit the transfer sheet adds.</p>
-`,
-    closing: pyjamaBox(`<p>Cotton sets. After pressing, wash inside out on the cooler of the garment label and the transfer sheet.</p>`)
+<p>Once a print is on cotton nightwear, wash it on the care label, inside out, and within whatever limit the transfer sheet adds.</p>
+`
   },
   {
     path: "/guides/dtf-vs-htv-vs-sublimation/",
@@ -220,9 +219,8 @@ export const guidePages = [
 </div>
 <p>The HTV temperatures and the sublimation temperatures are on <a href="https://heatpress-settings.co.uk/">Heat press settings</a>. This site does not copy those charts across. A common DTF cold peel, from <a href="https://www.xpres.co.uk/direct-to-film-how-to-guide" rel="noopener noreferrer">Xpres</a>, is 150–160°C for 10–15 seconds, medium, peeled cold. That is a short press beside a sublimation shirt press.</p>
 <p>Choose DTF for a photograph or a full-colour design on cotton, blends, or dark polyester. Choose HTV for a flat name or a simple shape in one colour. Choose sublimation when the blank is light polyester, or a coated item sold for it, and you want the print in the fibre rather than on it.</p>
-<p>The blank sets below are 100% cotton. The white chest takes DTF and it takes vinyl. It does not take sublimation dye. <a href="https://heatpress-settings.co.uk/pyjamas/sublimation/">Heat press settings</a> explains that limit. Pressing longer will not add polyester.</p>
-`,
-    closing: pyjamaBox(`<p>Cotton chests. DTF and HTV can sit here. Sublimation dye will not bond to the cotton.</p>`)
+<p>Plain 100% cotton kids' pyjamas ${pyjamaLink("like these")} have a white chest. It takes DTF and it takes vinyl. It does not take sublimation dye. <a href="https://heatpress-settings.co.uk/pyjamas/sublimation/">Heat press settings</a> explains that limit. Pressing longer will not add polyester.</p>
+`
   },
   {
     path: "/guides/gang-sheets/",

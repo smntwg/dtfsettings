@@ -448,65 +448,25 @@ ol.steps, .prose ol, .prose ul { padding-left: 1.2rem; }
 .related h2 { margin-top: 0; font-size: 1.25rem; }
 .related ul { margin: 0.3rem 0 0; padding-left: 1.1rem; }
 
-.blanks {
-  margin: 1rem 0;
-  padding: 0.9rem 1rem;
-  background: var(--mist);
-  border: 1px solid #e3d0e4;
-}
-
-.blanks h2 { margin: 0 0 0.35rem; font-size: 1.25rem; }
-.blanks p { margin: 0.3rem 0; }
-.blanks .blank-group {
-  margin: 1.05rem 0 0.35rem;
-  font-size: 1.05rem;
-}
-.blank-grid {
-  display: grid;
-  gap: 0.75rem;
-  list-style: none;
-  margin: 0.45rem 0 0;
-  padding: 0;
-}
-@media (min-width: 700px) {
-  .blank-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (min-width: 1000px) {
-  .blank-grid.wide { grid-template-columns: 1fr 1fr 1fr; }
-}
-.blank-card {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  padding: 0 0 0.95rem;
+.example-press {
   display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  min-width: 0;
-  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin: 1.1rem 0 1.2rem;
 }
-.blank-card img {
-  display: block;
-  width: 100%;
+.example-press img {
+  width: 6.5rem;
   height: auto;
   background: #fff;
+  border: 1px solid var(--line);
 }
-.blank-card h3 {
-  margin: 0.15rem 0.9rem 0;
-  font-size: 1.05rem;
+.example-press figcaption {
+  flex: 1 1 16rem;
+  margin: 0;
+  max-width: 36rem;
+  color: var(--ink);
 }
-.blank-card p {
-  margin: 0 0.9rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-a.btn {
-  align-self: flex-start;
-  display: inline-block;
-  margin: auto 0.9rem 0;
-  color: #f7f1f6;
-  text-decoration: none;
-}
-a.btn:hover { color: #fff; background: var(--plum-2); }
 .guidance {
   background: var(--card);
   border-left: 4px solid var(--plum);
