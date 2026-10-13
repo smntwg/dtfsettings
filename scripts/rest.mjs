@@ -81,7 +81,7 @@ export const restPages = [
   {
     path: "/privacy/",
     title: "Privacy policy, cookies and affiliate disclosure",
-    description: "UK GDPR privacy notice for dtfsettings.co.uk: email, cookies, empty advert spaces, and plain links to Amazon UK listings.",
+    description: "UK GDPR privacy notice for dtfsettings.co.uk: email, cookies, empty advert spaces, and a plain link to an Amazon UK range.",
     kicker: "Privacy",
     h1: "Privacy policy",
     lede: "This notice explains what dtfsettings.co.uk does with personal information. It was updated on 12 October 2026.",
@@ -106,7 +106,7 @@ export const restPages = [
 <h2>Advertising and affiliate links</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
 <p>You may also see a box headed “What you’ll need”. The slots in it are empty. Nothing is loaded there, and they are not affiliate links.</p>
-<p>The cotton page and the children’s clothing page each show a small photo of plain kids’ pyjamas and one plain link to an Amazon UK listing. The DTF, HTV and sublimation guide uses that same link in a sentence. Nothing is added to the address to track a commission. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
+<p>The cotton page and the children’s clothing page each show two small photos of kids’ pyjamas, one plain colour and one stripe, and a sentence that links to the Amazon UK range. The photos use that same address. The DTF, HTV and sublimation guide uses it in a sentence. Nothing is added to the address to track a commission. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
 <h2>How long we keep email</h2>
 <p>We keep correspondence for as long as we need it to handle your question and any follow-up, and then delete it. Hosting logs are kept on the host’s schedule, not ours.</p>
 <h2>Your rights</h2>
