@@ -329,7 +329,7 @@ function documentHtml(page) {
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Playfair+Display:wght@500..800&display=swap">
   <link rel="stylesheet" href="/css/site.css">
   ${jsonLd(graphFor(page, canonical))}
-  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bdd4536e728b44358ac2d9c06e183ff7"}'></script><!-- End Cloudflare Web Analytics -->
+  <!-- Cloudflare Web Analytics: injected automatically by Cloudflare (zone setting). Do not add the manual beacon: this site's token is zone-type and the manual endpoint rejects it. -->
 </head>
 <body>
   ${header(here)}
