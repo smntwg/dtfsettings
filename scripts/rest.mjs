@@ -102,7 +102,7 @@ export const restPages = [
 <p>The site is hosted on Cloudflare Pages. Delivering a web page involves connection data such as your IP address. That processing is done by the host so the site can be shown. Cloudflare’s own privacy notice describes their logs: <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">cloudflare.com/privacypolicy</a>.</p>
 <p>We do not ask for an account, we do not run a contact form with a database behind it, and we do not use the site to profile you.</p>
 <h2>Cookies</h2>
-<p>This version of the site does not set its own cookies. It does not load analytics, and it does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
+<p>This version of the site does not set its own cookies. It uses Cloudflare Web Analytics to count page views, which is cookieless: it does not set cookies or use local storage, and it does not track you across sites. It does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
 <h2>Advertising and affiliate links</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
 <p>You may also see a box headed “What you’ll need”. The slots in it are empty. Nothing is loaded there, and they are not affiliate links.</p>
