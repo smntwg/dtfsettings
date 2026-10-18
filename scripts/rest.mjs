@@ -72,10 +72,10 @@ export const restPages = [
 <h2>Where the numbers come from</h2>
 <p>The common cold-peel band, 150–160°C for 10–15 seconds at medium pressure, is the press <a href="https://www.xpres.co.uk/direct-to-film-how-to-guide" rel="noopener noreferrer">Xpres</a> describe, including a cold peel and a second press. Their <a href="https://www.xpres.co.uk/xpres-dtf-evolution-cold-peel-sheets-pack-x-100" rel="noopener noreferrer">Evolution cold-peel sheets</a> use that heat and time, a second press of 10–15 seconds, a wash up to 40°C inside out, and ironing on the reverse only. <a href="https://www.amayauk.com/product/propeel-dtf-film-60cm-x-100m/" rel="noopener noreferrer">Amaya ProPeel</a> is an instant-peel film with its own short times, including 3 seconds on cotton. Those cards are labelled. They are not blended into one average.</p>
 <p>Denim, canvas, nylon and hi-vis do not have their own row on those pages. Where this site still offers a starting point, the page says so. Nylon is a test figure only if your supplier lists nylon. Hi-vis is a cooler cautious start, kept off the reflective tape. Heavier cotton uses the top of the published band because Xpres say heavier cotton may need a slightly higher temperature and they do not print a new number.</p>
-<h2>What we will not do</h2>
-<p>We do not invent a citation. If a page on this site links to a supplier, that page is one we are describing. If a row is a starting point rather than a named chart, it is labelled as a starting point. The instructions in your packet override both.</p>
+<h2>What this site will not do</h2>
+<p>It does not invent a citation. If a page on this site links to a supplier, that page is the one being described. If a row is a starting point rather than a named chart, it is labelled as a starting point. The instructions in your packet override both.</p>
 <p>Nothing here is a promise that your press matches the dial. Test on a scrap. HTV and sublimation are a different craft. Their charts are on <a href="https://heatpress-settings.co.uk/">Heat press settings</a>.</p>
-<p>The guides were checked against those supplier pages on 12 October 2026. Makers revise sheets. If a product page and this site diverge, believe the product page, and <a href="/contact/">tell us</a>.</p>
+<p>The guides were checked against those supplier pages on 12 October 2026. Makers revise sheets. If a product page and this site diverge, believe the product page, and <a href="/contact/">send a correction</a>.</p>
 `
   },
   {
@@ -84,8 +84,8 @@ export const restPages = [
     description: "UK GDPR privacy notice for dtfsettings.co.uk: email, cookies, empty advert spaces, and a plain link to an Amazon UK range.",
     kicker: "Privacy",
     h1: "Privacy policy",
-    lede: "This notice explains what dtfsettings.co.uk does with personal information. It was updated on 12 October 2026.",
-    modified: "2026-10-12",
+    lede: "This notice explains what dtfsettings.co.uk does with personal information. It was updated on 18 October 2026.",
+    modified: "2026-10-18",
     crumbs: [home, { href: "/privacy/", label: "Privacy" }],
     schema: "privacy",
     need: false,
@@ -132,7 +132,7 @@ export const restPages = [
     ],
     body: `
 <p><a href="mailto:contact@dtfsettings.co.uk">contact@dtfsettings.co.uk</a></p>
-<p>Useful mail is a correction: the transfer name, the page you were on, and the supplier link that disagrees with us. We cannot set the dial for every press and every own-brand film. If the packet in your hand has a temperature, that packet wins.</p>
+<p>Useful mail is a correction: the transfer name, the page you were on, and the supplier link that disagrees with this site. No chart can set the dial for every press and every own-brand film. If the packet in your hand has a temperature, that packet wins.</p>
 <p>Please do not send passwords, payment card numbers or anything else you would not want in an ordinary email. The <a href="/privacy/">privacy notice</a> explains what happens to messages.</p>
 `
   }

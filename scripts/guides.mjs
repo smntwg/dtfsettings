@@ -107,7 +107,7 @@ export const guidePages = [
       { href: "/fabrics/nylon/", label: "Nylon, where a hot peel is a poor guess" }
     ],
     faqs: [
-      { q: "What if the packet does not say?", a: "Ask the supplier before you press a batch. This site will not tell you to guess. Cold is the peel on the Xpres pages we use. It is not a universal default for every film on the market." },
+      { q: "What if the packet does not say?", a: "Ask the supplier before you press a batch. This site will not tell you to guess. Cold is the peel on the Xpres pages cited here. It is not a universal default for every film on the market." },
       { q: "Can I let a hot-peel film cool, just to be safe?", a: "Only if the sheet allows it. Some hot-peel films are meant to come off straight away, and waiting can make the carrier fight you. Read the packet. Amaya ProPeel says peel instantly." }
     ],
     body: `
