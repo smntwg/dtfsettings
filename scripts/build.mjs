@@ -25,7 +25,8 @@ const nav = [
       ["Denim", "/fabrics/denim/"],
       ["Canvas and tote bags", "/fabrics/canvas-totes/"],
       ["Hi-vis", "/fabrics/hi-vis/"],
-      ["Children's clothing", "/fabrics/childrens-clothing/"]
+      ["Children's clothing", "/fabrics/childrens-clothing/"],
+      ["Hoodies and sweatshirts", "/fabrics/hoodies/"]
     ]
   },
   {
@@ -410,7 +411,8 @@ function homePage() {
     ["/fabrics/denim/", "Denim", "Heavy cotton: the top of the band, and a longer press."],
     ["/fabrics/canvas-totes/", "Canvas and totes", "Pre-press the panel. Keep handles and seams off the platen."],
     ["/fabrics/hi-vis/", "Hi-vis", "Cooler, and keep the design off the reflective tape."],
-    ["/fabrics/childrens-clothing/", "Children's clothing", "Cotton tops with a white chest. Use the cotton row, and keep the design on that chest."]
+    ["/fabrics/childrens-clothing/", "Children's clothing", "Cotton tops with a white chest. Use the cotton row, and keep the design on that chest."],
+    ["/fabrics/hoodies/", "Hoodies and sweatshirts", "The fabric's own row. Get the print area above the pocket seam and dry the fleece first."]
   ].map(([href, title, text]) =>
     `<a class="guide-card" href="${href}"><h3>${esc(title)}</h3><p>${esc(text)}</p></a>`
   ).join("");

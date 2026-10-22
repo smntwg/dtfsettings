@@ -55,7 +55,8 @@ export const fabricPages = [
       { href: "/guides/peel-types/", label: "Hot, warm and cold peel" },
       { href: "/guides/final-press/", label: "The second press" },
       { href: "/guides/dtf-vs-htv-vs-sublimation/", label: "When to use HTV or sublimation instead" },
-      { href: "/troubleshooting/not-sticking/", label: "If it does not stick" }
+      { href: "/troubleshooting/not-sticking/", label: "If it does not stick" },
+      { href: "/fabrics/hoodies/", label: "Hoodies and sweatshirts" }
     ],
     faqs: [
       { q: "Should I press cotton hotter than 160°C?", a: "Not from the pages this site uses. Xpres say heavier cotton may need a slightly higher temperature and they do not print a new number. Creep up on a spare, inside the instructions you were given, rather than jumping past the sheet." },
@@ -270,6 +271,48 @@ ${pyjamaMention()}
 <p>Lay the top flat, front up. Centre the transfer on the white body, below the neckband, with plain cotton around it. Cover it. If the platen also covers a printed sleeve, that print takes the same heat, so slide the top until the platen meets the chest and as little of the print as you can manage.</p>
 ${designTable}
 <p>A one-colour name can be vinyl instead of DTF. Placement and the film charts are on <a href="https://heatpress-settings.co.uk/pyjamas/htv/">Heat press settings</a>. If you sell children’s nightwear in the UK, a design on the chest does not remove the labelling rules. That sister page points at the trading-standards summary. This site is not legal advice.</p>
+`
+  }
+  ,
+  {
+    path: "/fabrics/hoodies/",
+    title: "DTF on hoodies and sweatshirts: heat press settings",
+    description: "Pressing DTF transfers on hoodies and sweatshirts: the fabric's own row, a pillow past the pocket seams, a dry pre-press, and the hood kept off the platen.",
+    kicker: "Fabric",
+    h1: "Hoodies and sweatshirts",
+    lede: "A hoodie takes a DTF transfer well. It just fights back: a pocket seam, a thick fleece that holds water, a hood and drawcords. Use the row for the fabric, then deal with those.",
+    crumbs: [home, { href: "/fabrics/hoodies/", label: "Hoodies and sweatshirts" }],
+    schema: "article",
+    sources: [
+      xpresHow,
+      xpresEvo,
+      { label: "Siser, how to heat press a hoodie", url: "https://www.siserna.com/heat-press-hoodie/", note: "a pillow under the print area, seams off the platen, pressure turned down" },
+      { label: "Siser, heat transfer pillows", url: "https://www.siser.com/all-about-siser-heat-transfer-pillows/", note: "for seams, pockets, zips and drawstrings" }
+    ],
+    related: [
+      { href: "/fabrics/cotton/", label: "100% cotton" },
+      { href: "/fabrics/poly-cotton/", label: "Poly-cotton blends" },
+      { href: "/fabrics/polyester/", label: "Polyester" },
+      { href: "/guides/pre-pressing/", label: "Pre-pressing" },
+      { href: "/troubleshooting/not-sticking/", label: "Edges that do not stick" },
+      { href: "/troubleshooting/cracking/", label: "Cracking" }
+    ],
+    faqs: [
+      { q: "Is there a separate hoodie temperature?", a: "Not in the Xpres guide this site uses. They give one common press for cotton, polyester and blends: 150–160°C for 10–15 seconds, medium, cold peel, then a second press. Read the label, use that fabric’s row, and follow the sheet with your transfers if it differs." },
+      { q: "The print lifted only along the pocket line.", a: "The pocket seam held the platen off the film there. Lift the print area above the seam with a pressing pillow, or move the design. Adding heat or time does not reach a spot the platen is not touching." },
+      { q: "Where should the back print go?", a: "Low enough that the hood does not cover it when it is down. Siser make the same point about vinyl on a hoodie back." }
+    ],
+    body: `
+<p>Check the label first. Most hoodies and sweatshirts are cotton, polyester or a blend, and <a href="https://www.xpres.co.uk/direct-to-film-how-to-guide" rel="noopener noreferrer">Xpres</a> put all three in the same common DTF press: 150–160°C (302–320°F) for 10–15 seconds, medium pressure, peel cold, then press again under a cover. Use the <a href="/fabrics/cotton/">cotton</a>, <a href="/fabrics/poly-cotton/">poly-cotton</a> or <a href="/fabrics/polyester/">polyester</a> row, and the peel your packet names. Xpres also say heavier cotton may need a slightly higher temperature, without printing a new number, so a thick cotton hoodie sits at the top of that band rather than above it.</p>
+<h2>Dry it first</h2>
+<p>Sweatshirt fleece holds more moisture than a T-shirt. Xpres pre-press to take out moisture and creases before the film goes down. On a thick hoodie, open the press after the pre-press and let any steam clear before you position the transfer. A lint roller over the fleece stops loose fibres ending up under the film. More on <a href="/guides/pre-pressing/">pre-pressing</a>.</p>
+<h2>Get past the pocket and the seams</h2>
+<p>The kangaroo pocket is the usual reason a hoodie print fails in one band. Its stitched edge props the top platen up. Siser’s hoodie walkthrough, written for vinyl but the same press problem, puts a heat transfer pillow inside the garment so the print area sits higher than the pocket seams, and hangs the shoulder seams off the lower platen. With a pillow in, they turn the pressure down so the press still closes. Siser list zips, drawstrings, seams and pockets among the jobs a pillow is for.</p>
+<p>Keep the hood, the drawcords and any zip off the platen. Slide the hoodie on so you press one layer, not the front and back together. Pull the cords out of the way rather than pressing over them.</p>
+<h2>Peel and second press</h2>
+<p>Cold-peel film needs the hoodie to cool before you lift it. Fleece holds heat, so give it longer than a thin tee. Then cover and press again. The Xpres Evolution sheets give 10–15 seconds for that second press. If a corner lifts as you peel, lay the film back, cover it and press again rather than pulling. <a href="/troubleshooting/not-sticking/">Not sticking</a> covers the usual causes.</p>
+<p>Hoodies stretch across the chest and at the cuffs when they go on. A large, solid block of transfer is more likely to <a href="/troubleshooting/cracking/">crack</a> there than a lighter design. Wash inside out and follow the cooler of the garment label and the transfer sheet. See <a href="/guides/washing-and-care/">washing and care</a>.</p>
+<p>A one-colour name or number can be cut vinyl instead. Vinyl settings for hoodies are on <a href="https://heatpress-settings.co.uk/fabrics/hoodies/">Heat press settings</a>.</p>
 `
   }
 ];
