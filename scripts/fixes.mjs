@@ -27,7 +27,7 @@ export const fixPages = [
     path: "/troubleshooting/not-sticking/",
     modified: "2026-11-11",
     title: "Why is my DTF transfer not sticking? Causes and fixes",
-    description: "Why a DTF transfer is not sticking to the shirt: film upside down, the wrong peel, a damp garment, low time or pressure, an old or damp transfer, or a fabric the sheet never listed.",
+    description: "Why a DTF transfer is not sticking: film upside down, the wrong peel, a damp garment, low time or pressure, an old or damp transfer, or an unlisted fabric.",
     kicker: "Troubleshooting",
     h1: "Why is my DTF transfer not sticking?",
     lede: "If the design lifts as you peel, or the edges are already up, the bond did not happen. Pressing hotter than the sheet is the fix people try first, and it is often the wrong one.",
