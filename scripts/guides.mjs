@@ -16,15 +16,27 @@ const amaya = {
   note: "pre-press a few seconds; instant peel; second press 5 seconds"
 };
 
+const dtfCustom = {
+  label: "DTF Custom Transfers, storage guidelines",
+  url: "https://dtfcustomtransfers.co.uk/pages/care-instructions",
+  note: "use within six months to a year; dry, room temperature, out of sunlight, sealed, flat; stack no more than 50–100"
+};
+const sabur = {
+  label: "Sabur Digital, how to store DTF transfers",
+  url: "https://www.saburdigital.com/help-article/how-to-store-dtf-transfers/",
+  note: "sealed bags, such as zip-lock, to keep moisture out"
+};
+
 const home = { href: "/", label: "Home" };
 
 export const guidePages = [
   {
     path: "/guides/how-dtf-works/",
-    title: "How DTF transfers work",
-    description: "What direct-to-film is: a print on film, hot-melt powder, a short heat press, a peel, and usually a second press. Celsius, for UK crafters.",
+    modified: "2026-11-11",
+    title: "How to use DTF transfers: step by step, in Celsius",
+    description: "How to use a DTF transfer with a heat press: pre-press, film adhesive side down, 150–160°C for 10–15 seconds, peel as the sheet says, then a second press. Plus how DTF works.",
     kicker: "Guide",
-    h1: "How DTF works",
+    h1: "How to use DTF transfers",
     lede: "Direct-to-film puts a full-colour design, white ink included, onto a clear film. You press that film onto the garment. The shirt does not have to be polyester.",
     crumbs: [home, { href: "/guides/how-dtf-works/", label: "How DTF works" }],
     schema: "howto",
@@ -36,6 +48,9 @@ export const guidePages = [
       { href: "/guides/peel-types/", label: "Peel types" },
       { href: "/guides/final-press/", label: "The second press" },
       { href: "/fabrics/cotton/", label: "Cotton settings" },
+      { href: "/fabrics/polyester/", label: "Polyester settings" },
+      { href: "/troubleshooting/not-sticking/", label: "Why a transfer is not sticking" },
+      { href: "/troubleshooting/cracking/", label: "Why a print cracks" },
       { href: "/fabrics/childrens-clothing/", label: "Children's clothing" }
     ],
     steps: [
@@ -47,10 +62,17 @@ export const guidePages = [
     ],
     faqs: [
       { q: "Do I cure powder if I bought the transfers?", a: "No. Curing is part of making the transfer. A finished gang sheet is ready to press. Do not bake a bought transfer in a curing oven because a printing guide mentioned 150–160°C." },
-      { q: "Why is there white ink?", a: "So the design shows on a dark or coloured shirt. The white sits under the colour on the film. Sublimation has no white ink, which is one reason it cannot lighten a navy shirt." }
+      { q: "Why is there white ink?", a: "So the design shows on a dark or coloured shirt. The white sits under the colour on the film. Sublimation has no white ink, which is one reason it cannot lighten a navy shirt." },
+      { q: "Which side of the DTF film goes down?", a: "The adhesive side, the one with the melted powder on it, goes against the garment. Xpres describe positioning the film with the melted glue side down. The clear carrier faces you, and you peel it off after the press." },
+      { q: "Do DTF transfers work on cotton and polyester?", a: "Yes. Xpres say DTF works on cotton, poly, blends and more. Polyester wants a cover sheet so it does not shine, and some films publish a cooler polyester row. Nylon and coated fabrics only if your supplier lists them." },
+      { q: "Do DTF transfers crack?", a: "A well-pressed print flexes with the shirt, but it can crack if it was pressed too long or too hot, crushed by a heavy second press, stretched across a seam, or washed hotter than the sheet allows. Xpres Evolution sheets say wash up to 40°C inside out." },
+      { q: "Can I use an iron instead of a heat press?", a: "None of the sources used here give an iron method for applying DTF. They are written for a heat press at a set temperature, time and pressure, which a household iron cannot hold evenly. If your supplier publishes iron instructions, follow theirs." }
     ],
     body: `
+<p><strong>Quick answer:</strong> pre-press the garment dry, lay the transfer adhesive side down, cover it and press at medium pressure (a common setting is 150–160°C for 10–15 seconds), peel the way the sheet says, then cover and press again. The steps are below. Your transfer sheet overrides these numbers.</p>
+<h2>What DTF is</h2>
 <p>If you print the film yourself, <a href="https://www.xpres.co.uk/direct-to-film-how-to-guide" rel="noopener noreferrer">Xpres</a> describe coating the wet ink with hot-melt powder and curing it until it has an orange-peel look. Their steps say about 3–4 minutes at 150–160°C. The recommended section on the same page says about 2–3 minutes at roughly 150–160°C. Both are on that page. Use the sheet that came with your powder, and keep powder off the printer. Masks, gloves and eye protection matter with hot-melt powder. That is a printing job, not a pressing job.</p>
+<h2>Using a ready-made transfer</h2>
 <p>Most people using this site are pressing a transfer someone else has already made. Your work starts at the pre-press. The adhesive side goes against the fabric. The carrier film faces you. Press, peel, press again. Fabric-by-fabric numbers are on the <a href="/fabrics/cotton/">fabric pages</a> and in the <a href="/">lookup</a>.</p>
 <p>The blank kids’ pyjamas linked from the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page are cotton, so this is a DTF job or a vinyl job, not sublimation. A full-colour picture belongs here. A one-colour name may be simpler as <a href="https://heatpress-settings.co.uk/methods/standard-htv/">heat transfer vinyl</a>.</p>
 `
@@ -224,6 +246,7 @@ export const guidePages = [
   },
   {
     path: "/guides/gang-sheets/",
+    modified: "2026-11-11",
     title: "DTF gang sheets: cutting and pressing",
     description: "How to cut and press a DTF gang sheet: leave a margin, do not cut the design, and use the same heat, time, pressure and peel as that film.",
     kicker: "Guide",
@@ -254,31 +277,58 @@ export const guidePages = [
     body: `
 <p>You are paying for the sheet size, not for a promise about every design. Leave space between pictures when you order, enough to cut a margin. Scissors are enough. A blade that scores the adhesive at the edge of the ink gives you a line that cracks later.</p>
 <p>The press is the same as any other transfer of that type. Cold-peel cotton is still 150–160°C for 10–15 seconds unless your supplier printed a different row. Look up the <a href="/">fabric and the peel</a>, then believe the slip in the parcel if it disagrees.</p>
-<p>Offcuts and spare names should be stored flat. The <a href="/guides/storing-transfers/">storing</a> page is short on purpose. Heat and damp are what ruin a pile of cut transfers before you ever reach the press.</p>
+<p>Offcuts and spare names should be stored flat. The <a href="/guides/storing-transfers/">storing</a> page covers sealing, stacking and shelf life. Heat and damp are what ruin a pile of cut transfers before you ever reach the press.</p>
 `
   },
   {
     path: "/guides/storing-transfers/",
-    title: "Storing DTF transfers",
-    description: "How to store DTF transfers: flat, cool and dry, out of sunlight, with the supplier's shelf life rather than a guessed number of months.",
+    modified: "2026-11-11",
+    title: "How to store DTF transfers, and how long they last",
+    description: "How to store DTF transfers: sealed against damp, flat, at room temperature and out of sunlight. What UK suppliers publish on shelf life, and how to test an old batch.",
     kicker: "Guide",
-    h1: "Storing transfers",
-    lede: "Finished DTF transfers keep best flat, cool and dry. Fold one through the print, or leave a stack in a hot car, and they stick to each other or curl before you press them.",
+    h1: "How to store DTF transfers",
+    lede: "Finished DTF transfers keep best sealed, flat, dry and at room temperature. Damp is the main enemy. Fold one through the print, or leave a stack in a hot car, and they stick to each other or curl before you press them.",
     crumbs: [home, { href: "/guides/storing-transfers/", label: "Storing transfers" }],
     schema: "article",
+    sources: [dtfCustom, sabur],
     related: [
       { href: "/guides/gang-sheets/", label: "Cutting gang sheets" },
-      { href: "/guides/how-dtf-works/", label: "How DTF works" },
+      { href: "/guides/how-dtf-works/", label: "How to use DTF transfers" },
+      { href: "/guides/peel-types/", label: "Peel types, worth writing on the sleeve" },
       { href: "/troubleshooting/not-sticking/", label: "A transfer that will not bond" }
     ],
     faqs: [
-      { q: "How long do they last?", a: "As long as the supplier prints on the packet. This site does not invent a shelf life. Use older sheets first, and if a sheet is past the date they gave you, test one before you promise a batch." },
-      { q: "The film has stuck to the next one.", a: "Warmth or pressure did that. Peel them apart slowly. If the adhesive has lifted off its own film, that piece is done. Do not press it and hope the shirt will sort it out." }
+      { q: "How long do DTF transfers last before pressing?", a: "Go by your supplier. DTF Custom Transfers recommend using theirs within six months to a year, and say storage conditions change that. Use older sheets first, and if a batch is past the time your supplier gave, press a test piece before you promise an order." },
+      { q: "How do I know an old transfer is still good?", a: "Look before you press. DTF Custom Transfers say transfers that are hard to peel, do not stick after pressing, or look wrinkled have probably expired, and suggest testing a small sample first. A test on a scrap costs one transfer, not a customer's shirt." },
+      { q: "The film has stuck to the next one.", a: "Warmth or pressure did that. Peel them apart slowly. If the adhesive has lifted off its own film, that piece is done. Do not press it and hope the shirt will sort it out." },
+      { q: "Can I keep them in the garage or the loft?", a: "Only if it stays dry and does not get hot. Both suppliers cited here put moisture first, and DTF Custom Transfers ask for a steady room temperature away from extremes. Unheated outbuildings and lofts swing through damp and heat across a year, so a cupboard in the house is the safer bet." }
     ],
     body: `
+<h2>The short version</h2>
+<ul>
+  <li><strong>Sealed.</strong> <a href="https://www.saburdigital.com/help-article/how-to-store-dtf-transfers/" rel="noopener noreferrer">Sabur Digital</a> recommend sealed bags, any zip-lock will do, because moisture is what spoils transfers before you use them.</li>
+  <li><strong>Dry and at room temperature.</strong> <a href="https://dtfcustomtransfers.co.uk/pages/care-instructions" rel="noopener noreferrer">DTF Custom Transfers</a> ask for a dry place at a steady room temperature, away from extreme heat or cold.</li>
+  <li><strong>Out of sunlight.</strong> Heat through a window can affect the adhesive.</li>
+  <li><strong>Flat, not folded.</strong> They say lay transfers flat, not upright or at an angle, so they do not curl.</li>
+  <li><strong>Small stacks.</strong> They suggest no more than 50–100 transfers in a stack so they do not stick together.</li>
+  <li><strong>Cut gang sheets up.</strong> Separate pieces are easier to store and to find.</li>
+</ul>
+<h2>What UK suppliers publish</h2>
+<div class="table-wrap">
+<table class="compact">
+  <caption>Storage advice from supplier pages, checked 11 November 2026</caption>
+  <thead><tr><th>Supplier</th><th>Shelf life they give</th><th>How they say to store</th></tr></thead>
+  <tbody>
+    <tr><td><a href="https://dtfcustomtransfers.co.uk/pages/care-instructions" rel="noopener noreferrer">DTF Custom Transfers</a></td><td>Within six months to a year for best results</td><td>Dry, room temperature, out of sunlight, airtight container, flat, stacks of 50–100 at most</td></tr>
+    <tr><td><a href="https://www.saburdigital.com/help-article/how-to-store-dtf-transfers/" rel="noopener noreferrer">Sabur Digital</a></td><td>Not stated</td><td>Sealed bags, kept absolutely dry</td></tr>
+  </tbody>
+</table>
+</div>
+<p>That is two suppliers, not a law of DTF. Films, inks and powders differ. If your supplier prints a date or a storage note, that is the instruction.</p>
+<h2>Handling the stack</h2>
 <p>Keep transfers flat, in a sleeve or between sheets of paper, out of direct sun. A cool cupboard beats a windowsill and beats the back of a van in July. Damp air can leave the film tacky. If a sheet feels wet or the powder looks disturbed, do not press a customer’s shirt with it. Press a scrap, or discard it.</p>
-<p>Do not fold through the design. A crease in the adhesive shows up as a line on the garment. Cut gang-sheet pieces want the same treatment. Write the peel type on the sleeve if you have more than one film in the drawer. Cold, warm and hot are easy to mix up a month later, and the <a href="/guides/peel-types/">peel</a> is how prints get ruined in the first second after the press opens.</p>
-<p>Nothing on the <a href="https://www.xpres.co.uk/direct-to-film-how-to-guide" rel="noopener noreferrer">Xpres</a> pressing guide is a storage life. When your supplier prints one, that date is the instruction.</p>
+<p>Do not fold through the design. A crease in the adhesive shows up as a line on the garment. Cut gang-sheet pieces want the same treatment. Write the peel type and the date on the sleeve if you have more than one film in the drawer. Cold, warm and hot are easy to mix up a month later, and the <a href="/guides/peel-types/">peel</a> is how prints get ruined in the first second after the press opens.</p>
+<p>If an older batch starts lifting at the edges, work through <a href="/troubleshooting/not-sticking/">not sticking</a> before blaming the press. Pre-press the garment as usual. A transfer that has taken on damp is not rescued by a hotter press.</p>
 `
   }
 ];

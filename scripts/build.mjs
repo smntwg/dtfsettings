@@ -259,7 +259,7 @@ function graphFor(page, canonical) {
       "@type": page.schema === "about" ? "AboutPage" : "Article",
       headline: page.h1,
       description: page.description,
-      dateModified: modified,
+      dateModified: page.modified || modified,
       inLanguage: "en-GB",
       mainEntityOfPage: canonical,
       author: { "@type": "Organization", name: "DTF settings" }
@@ -418,20 +418,20 @@ function homePage() {
   ).join("");
 
   const guideCards = [
-    ["/guides/how-dtf-works/", "How DTF works", "Film, powder, a short press, a peel, and usually a second press."],
+    ["/guides/how-dtf-works/", "How to use DTF transfers", "Pre-press, press adhesive side down, peel as the sheet says, press again. Plus how DTF works."],
     ["/guides/pre-pressing/", "Pre-pressing", "Dry the fabric before the transfer goes down."],
     ["/guides/peel-types/", "Peel types", "Hot, warm and cold are instructions, not moods."],
     ["/guides/final-press/", "The final press", "The second press under a cover sheet, and why it is not optional on most sheets."],
     ["/guides/washing-and-care/", "Washing and care", "Inside out, and the cooler of the label and the transfer sheet."],
     ["/guides/dtf-vs-htv-vs-sublimation/", "DTF, HTV or sublimation", "Which job is which, and where the other charts live."],
     ["/guides/gang-sheets/", "Gang sheets", "Cut them apart, then press one design at a time."],
-    ["/guides/storing-transfers/", "Storing transfers", "Flat, cool and dry. The packet's shelf life wins."]
+    ["/guides/storing-transfers/", "Storing transfers", "Sealed, flat and dry, and what UK suppliers say about shelf life."]
   ].map(([href, title, text]) =>
     `<a class="guide-card" href="${href}"><h3>${esc(title)}</h3><p>${esc(text)}</p></a>`
   ).join("");
 
   const fixLinks = [
-    ["/troubleshooting/not-sticking/", "Not sticking"],
+    ["/troubleshooting/not-sticking/", "Why is my DTF transfer not sticking?"],
     ["/troubleshooting/cracking/", "Cracking"],
     ["/troubleshooting/peeling-after-washing/", "Peeling after washing"],
     ["/troubleshooting/ghosting-shiny-marks/", "Ghosting or shiny marks"]
@@ -517,19 +517,22 @@ function write(rel, html) {
   fs.writeFileSync(dest, html);
 }
 
+// Sitemap lastmod per page: page.modified if set, else the site-wide date.
+// The hoodies page was added on 22 October 2026.
+const lastmodOverride = { "/fabrics/hoodies/": "2026-10-22", "/": "2026-11-11" };
 const urls = [];
 for (const page of pages) {
   const rel = page.path.replace(/^\//, "") + "index.html";
   write(rel, documentHtml(page));
-  if (!page.robots) urls.push(origin + page.path);
+  if (!page.robots) urls.push([origin + page.path, page.modified || lastmodOverride[page.path] || modified]);
 }
 write("index.html", homePage());
-urls.unshift(origin + "/");
+urls.unshift([origin + "/", lastmodOverride["/"]]);
 write("404.html", notFound());
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${url}</loc><lastmod>${modified}</lastmod></url>`).join("\n")}
+${urls.map(([url, lastmod]) => `  <url><loc>${url}</loc><lastmod>${lastmod}</lastmod></url>`).join("\n")}
 </urlset>
 `;
 fs.writeFileSync(path.join(root, "sitemap.xml"), sitemap);
