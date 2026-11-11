@@ -163,7 +163,7 @@ function needBox(items) {
   ).join("");
   return `<aside class="need" aria-label="What you'll need">
   <h2>What you'll need</h2>
-  <p>Space for product links. Nothing is loaded in this box yet, and these are not affiliate links.</p>
+  <p>Space for product links. Nothing is loaded in this box yet.</p>
   <ul class="need-list">${slots}</ul>
 </aside>`;
 }
