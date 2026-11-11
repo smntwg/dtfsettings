@@ -14,31 +14,58 @@ const amaya = {
   note: "peel instantly; times differ by fabric"
 };
 
+const dtfCustom = {
+  label: "DTF Custom Transfers, storage and care",
+  url: "https://dtfcustomtransfers.co.uk/pages/care-instructions",
+  note: "transfers that will not stick or peel may be old or damp; check pressure; test a sample"
+};
+
 const home = { href: "/", label: "Home" };
 
 export const fixPages = [
   {
     path: "/troubleshooting/not-sticking/",
-    title: "DTF transfer not sticking",
-    description: "Why a DTF transfer does not stick: the wrong peel, low time or pressure, a damp shirt, the film upside down, or a fabric the sheet never listed.",
+    modified: "2026-11-11",
+    title: "Why is my DTF transfer not sticking? Causes and fixes",
+    description: "Why a DTF transfer is not sticking to the shirt: film upside down, the wrong peel, a damp garment, low time or pressure, an old or damp transfer, or a fabric the sheet never listed.",
     kicker: "Troubleshooting",
-    h1: "Not sticking",
+    h1: "Why is my DTF transfer not sticking?",
     lede: "If the design lifts as you peel, or the edges are already up, the bond did not happen. Pressing hotter than the sheet is the fix people try first, and it is often the wrong one.",
     crumbs: [home, { href: "/troubleshooting/not-sticking/", label: "Not sticking" }],
     schema: "article",
-    sources: [xpresHow, xpresEvo, amaya],
+    sources: [xpresHow, xpresEvo, amaya, dtfCustom],
     related: [
       { href: "/guides/peel-types/", label: "Peel types" },
       { href: "/guides/pre-pressing/", label: "Pre-pressing" },
       { href: "/guides/final-press/", label: "The second press" },
+      { href: "/guides/storing-transfers/", label: "Storing transfers so they still bond" },
       { href: "/fabrics/nylon/", label: "Nylon" },
       { href: "/troubleshooting/peeling-after-washing/", label: "It stuck, then failed in the wash" }
     ],
     faqs: [
+      { q: "Should I turn the heat up?", a: "Not first. Most failures are the peel, a damp shirt, short time or uneven pressure. A common cold-peel press is 150–160°C for 10–15 seconds at medium pressure. Going well past your sheet can scorch the adhesive or shine the fabric and still not fix a peel that was done too early." },
       { q: "Can I press it again?", a: "If the carrier is still on and you peeled too soon, lay it back down carefully, cover it, and press again for the time on the sheet. If the ink has already torn out of the design, a second press will not put it back. Use a fresh transfer on a spare." },
-      { q: "It only failed on one side.", a: "That side was not pressed. A seam, a zip, a tote handle or a collar held the platen off the film. Move the garment so the design sits on a flat area. More temperature does not reach a gap." }
+      { q: "It only failed on one side.", a: "That side was not pressed. A seam, a zip, a tote handle or a collar held the platen off the film. Move the garment so the design sits on a flat area. More temperature does not reach a gap." },
+      { q: "Only the fine lines and small letters lift.", a: "Thin parts have the least adhesive under them, so they show a short press, light pressure or an early peel first. Check the peel type, give the full time on the sheet, and do the second press under a cover. If one film keeps losing fine detail, ask the supplier about minimum line thickness." },
+      { q: "Old transfers will not stick, new ones do.", a: "Storage is the likely cause. DTF Custom Transfers name improper storage, moisture and outdated transfers as reasons a transfer will not stick. Press a test piece from the old batch before you use it on a garment that matters." }
     ],
     body: `
+<h2>Quick diagnosis</h2>
+<div class="table-wrap">
+<table class="compact">
+  <caption>Match what you see to the likely cause</caption>
+  <thead><tr><th>What you see</th><th>Most likely cause</th><th>Try this</th></tr></thead>
+  <tbody>
+    <tr><td>Nothing transferred, the whole design came away on the film</td><td>Film upside down, or far too short or cool</td><td>Powdered side down. Check the time and temperature on the sheet.</td></tr>
+    <tr><td>Ink tore as you peeled</td><td>Wrong peel for the film</td><td>Cold peel means fully cool. Lay it back, cover and re-press if the carrier is intact.</td></tr>
+    <tr><td>Edges or corners up, centre fine</td><td>Damp fabric, uneven pressure or no second press</td><td>Pre-press, check the platen meets the edges, press again under a cover.</td></tr>
+    <tr><td>One side or one strip missing</td><td>A seam, zip, collar or handle under the platen</td><td>Move the design onto a flat area or use a pressing pillow.</td></tr>
+    <tr><td>Only small text and fine lines lift</td><td>Short press or early peel</td><td>Full time on the sheet, then the second press.</td></tr>
+    <tr><td>Old transfers fail, new ones from the same supplier work</td><td>Stored damp or for too long</td><td>Test one first. See <a href="/guides/storing-transfers/">storing transfers</a>.</td></tr>
+    <tr><td>Sticks on cotton, not on this garment</td><td>Fabric not listed on the sheet (nylon, coated, waterproof)</td><td>Check the packet names the fabric before testing a scrap.</td></tr>
+  </tbody>
+</table>
+</div>
 <h2>Work through it in this order</h2>
 <ol>
   <li><strong>Which way is the film?</strong> The adhesive, the duller powdered side, goes against the shirt. The clear carrier faces you. A transfer pressed upside down will never bond, however long you leave it.</li>
@@ -46,8 +73,9 @@ export const fixPages = [
   <li><strong>Was the shirt dry?</strong> Pre-press. Cotton, denim and canvas hold moisture. A damp panel lets go at the edges. See <a href="/guides/pre-pressing/">pre-pressing</a>.</li>
   <li><strong>Was it this film’s time, on this fabric?</strong> A common cold peel is 150–160°C for 10–15 seconds. A 3-second cotton press belongs to one instant-peel film, not to every hot-peel sheet. The <a href="/">lookup</a> keeps those apart. Your packet still wins.</li>
   <li><strong>Was the pressure even?</strong> Medium means the platen meets the cloth. Light pressure on thick denim misses the weave. Heavy pressure that squeezes adhesive out is a different fault, on the <a href="/troubleshooting/ghosting-shiny-marks/">shiny marks</a> page.</li>
+  <li><strong>Is the transfer old, or was it stored damp?</strong> <a href="https://dtfcustomtransfers.co.uk/pages/care-instructions" rel="noopener noreferrer">DTF Custom Transfers</a> list improper storage, moisture and outdated transfers among the reasons a transfer will not stick. A sheet that sat in a damp garage is not the same sheet you bought. See <a href="/guides/storing-transfers/">storing transfers</a>.</li>
   <li><strong>Does the sheet list this fabric?</strong> <a href="/fabrics/nylon/">Nylon</a> and coated cloth are the usual misses. If the packet does not name them, the cotton row will not save the job.</li>
-  <li><strong>Did you second-press?</strong> Some prints feel stuck and then lift at the corner because the <a href="/guides/final-press/">final press</a> was skipped.</li>
+  <li><strong>Did you second-press?</strong> Some prints feel stuck and then lift at the corner because the <a href="/guides/final-press/">final press</a> was skipped. Xpres recommend a second press of 10–15 seconds on their Evolution cold-peel sheets.</li>
 </ol>
 <p>If you printed the film yourself and the powder looks grainy rather than like orange peel, the cure failed before the shirt was involved. <a href="https://www.xpres.co.uk/direct-to-film-how-to-guide" rel="noopener noreferrer">Xpres</a> describe curing until that orange-peel look. Fix the cure. Do not chase it with a hotter shirt press.</p>
 <p>The dial is the last check. If a trusted sheet suddenly fails on a press that used to work, the platen may not be at the temperature on the screen. Test a scrap before you build a private offset into every job.</p>
